@@ -19,7 +19,37 @@ const About: React.FC = () => {
           <div className="w-24 h-1 bg-indigo-600 mx-auto"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 gap-12 items-center">
+          {/* Image/Visual Element */}
+          <div className="relative">
+            <div className="bg-gradient-to-br from-indigo-100 to-cyan-100 dark:from-indigo-900 dark:to-cyan-900 rounded-2xl p-8 text-center">
+              <div className="bg-white dark:bg-slate-800 rounded-xl p-8 shadow-lg">
+                <div className="w-32 h-32 mx-auto mb-6 relative overflow-hidden rounded-full shadow-lg">
+                  <img 
+                    src="/assets/Zahoor.png" 
+                    alt="Zahoor Ahmed" 
+                    className="w-full h-full rounded-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
+                  Zahoor Ahmed
+                </h3>
+                <p className="text-slate-600 dark:text-slate-400">
+                  UI/UX Designer & Developer
+                </p>
+                <div className="mt-6 flex justify-center space-x-2">
+                  <div className="w-3 h-3 bg-indigo-600 rounded-full animate-pulse"></div>
+                  <div className="w-3 h-3 bg-cyan-600 rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
+                  <div className="w-3 h-3 bg-amber-600 rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
+                </div>
+              </div>
+            </div>
+
+            {/* Floating Elements */}
+            <div className="absolute -top-4 -left-4 w-16 h-16 bg-indigo-600 rounded-lg opacity-20 animate-float"></div>
+            <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-cyan-600 rounded-full opacity-20 animate-float" style={{ animationDelay: '1s' }}></div>
+          </div>
+
           {/* Content */}
           <div className="space-y-6">
             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -80,56 +110,26 @@ const About: React.FC = () => {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <button className="inline-flex items-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105">
-  <Download size={20} className="mr-2" />
-  <a
-    href="/assets/Zahoor_Ahmed_CV.pdf"
-    download="Zahoor_Ahmed_CV.pdf"
-    className="flex items-center text-white"
-  >
-    Download CV
-  </a>
-</button>
+                <Download size={20} className="mr-2" />
+                <a
+                  href="/assets/Zahoor_Ahmed_CV.pdf"
+                  download="Zahoor_Ahmed_CV.pdf"
+                  className="flex items-center text-white"
+                >
+                  Download CV
+                </a>
+              </button>
 
               <button
-  onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=za0389188@gmail.com&su=Project Inquiry&body=Hello Zahoor, I want to hire you.', '_blank')}
-  className="inline-flex items-center px-6 py-3 bg-transparent border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-600 hover:text-white font-semibold rounded-lg transition-all duration-300"
->
-  <Mail size={20} className="mr-2" />
-  Contact Me
-</button>
-
+                onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=za0389188@gmail.com&su=Project Inquiry&body=Hello Zahoor, I want to hire you.', '_blank')}
+                className="inline-flex items-center px-6 py-3 bg-transparent border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-600 hover:text-white font-semibold rounded-lg transition-all duration-300"
+              >
+                <Mail size={20} className="mr-2" />
+                Contact Me
+              </button>
             </div>
           </div>
 
-          {/* Image/Visual Element */}
-          <div className="relative">
-            <div className="bg-gradient-to-br from-indigo-100 to-cyan-100 dark:from-indigo-900 dark:to-cyan-900 rounded-2xl p-8 text-center">
-              <div className="bg-white dark:bg-slate-800 rounded-xl p-8 shadow-lg">
-                <div className="w-32 h-32 mx-auto mb-6 relative overflow-hidden rounded-full shadow-lg">
-                  <img 
-                    src="/assets/Zahoor.png" 
-                    alt="Zahoor Ahmed" 
-                    className="w-full h-full rounded-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
-                  Zahoor Ahmed
-                </h3>
-                <p className="text-slate-600 dark:text-slate-400">
-                  UI/UX Designer & Developer
-                </p>
-                <div className="mt-6 flex justify-center space-x-2">
-                  <div className="w-3 h-3 bg-indigo-600 rounded-full animate-pulse"></div>
-                  <div className="w-3 h-3 bg-cyan-600 rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
-                  <div className="w-3 h-3 bg-amber-600 rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
-                </div>
-              </div>
-            </div>
-
-            {/* Floating Elements */}
-            <div className="absolute -top-4 -left-4 w-16 h-16 bg-indigo-600 rounded-lg opacity-20 animate-float"></div>
-            <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-cyan-600 rounded-full opacity-20 animate-float" style={{ animationDelay: '1s' }}></div>
-          </div>
         </div>
       </div>
     </section>
