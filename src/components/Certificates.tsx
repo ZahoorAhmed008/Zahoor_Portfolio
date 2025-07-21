@@ -74,10 +74,16 @@ const Certificates: React.FC = () => {
                   <span className="font-medium">{certificate.organization}</span>
                 </div>
 
-                <button className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium transition-colors duration-200 group">
+                {/* Updated: Link to certificate image */}
+                <a
+                  href={certificate.image}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium transition-colors duration-200 group"
+                >
                   <ExternalLink size={16} className="mr-2 group-hover:translate-x-1 transition-transform duration-200" />
                   View Certificate
-                </button>
+                </a>
               </div>
 
               <div className="absolute bottom-4 right-4 w-16 h-16 bg-slate-100 dark:bg-slate-700 rounded-full opacity-10"></div>
@@ -114,4 +120,3 @@ const Certificates: React.FC = () => {
 };
 
 export default Certificates;
-
