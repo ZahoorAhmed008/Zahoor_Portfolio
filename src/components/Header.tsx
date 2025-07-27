@@ -46,7 +46,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
-              Zahoor Ahmed
+              ZA.
             </h1>
           </div>
 
