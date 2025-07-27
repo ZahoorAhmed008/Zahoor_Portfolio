@@ -36,6 +36,7 @@ export interface BlogPost {
   excerpt: string;
   date: string;
   readTime: string;
+  link: string;
 }
 
 export interface ContactForm {

@@ -18,7 +18,7 @@ const Skills: React.FC = () => {
     },
     {
       category: 'Other Skills',
-      skills: ['WordPress Development', 'Graphic Design']
+      skills: ['WordPress Development', 'Graphic Design', 'Flutter Developer']
     }
   ];
 

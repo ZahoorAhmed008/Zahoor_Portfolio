@@ -8,19 +8,22 @@ const Blog: React.FC = () => {
       title: 'Best UI/UX Trends in 2025',
       excerpt: 'Explore the latest design trends that are shaping user experiences in 2025, from AI-driven interfaces to sustainable design practices.',
       date: 'March 15, 2025',
-      readTime: '5 min read'
+      readTime: '5 min read',
+      link: 'https://zahoordesign.hashnode.dev/best-uiux-trends-in-2025'
     },
     {
       title: 'Modern Front-End Development Practices',
       excerpt: 'A comprehensive guide to modern front-end development, covering the latest frameworks, tools, and best practices for building scalable web applications.',
       date: 'March 10, 2025',
-      readTime: '8 min read'
+      readTime: '8 min read',
+      link: 'https://zahoordesign.hashnode.dev/best-uiux-trends-in-5'
     },
     {
       title: 'The Psychology of Color in Web Design',
       excerpt: 'Understanding how color psychology impacts user behavior and how to use it effectively in your web design projects.',
       date: 'March 5, 2025',
-      readTime: '6 min read'
+      readTime: '6 min read',
+      link: 'https://zahoordesign.hashnode.dev/best-uiux-trends-in-5'
     }
   ];
 
@@ -65,22 +68,34 @@ const Blog: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-200 line-clamp-2">
                   {post.title}
                 </h3>
-                
+
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6 line-clamp-3">
                   {post.excerpt}
                 </p>
-                
+
                 {/* Read More Link */}
-                <button className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium transition-all duration-200 group">
-                  Read More
-                  <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
-                </button>
+                {post.link ? (
+                  <a
+                    href={post.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium transition-all duration-200 group"
+                  >
+                    Read More
+                    <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+                  </a>
+                ) : (
+                  <button className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium transition-all duration-200 group">
+                    Read More
+                    <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+                  </button>
+                )}
               </div>
             </article>
           ))}
@@ -93,7 +108,7 @@ const Blog: React.FC = () => {
               Want to Read More?
             </h3>
             <p className="text-slate-600 dark:text-slate-400 mb-6 max-w-2xl mx-auto">
-              I regularly share insights about design, development, and career growth. 
+              I regularly share insights about design, development, and career growth.
               Follow me for the latest updates and tips.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
