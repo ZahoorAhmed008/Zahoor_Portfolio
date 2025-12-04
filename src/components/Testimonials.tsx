@@ -11,10 +11,10 @@ const Testimonials: React.FC = () => {
       avatar: 'SJ'
     },
     {
-      name: 'Ahmed Ali',
-      role: 'CEO at StartupXYZ',
+      name: 'Rubab Qasim',
+      role: 'CEO at Wild Horizons',
       content: "Working with Zahoor was an exceptional experience. His UI/UX skills and front-end development expertise helped us create a stunning website that our users love.",
-      avatar: 'AA'
+      avatar: 'RQ'
     },
     {
       name: 'Maria Rodriguez',
@@ -95,20 +95,25 @@ const Testimonials: React.FC = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <div className="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-lg max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              Want to work together?
-            </h3>
-            <p className="text-slate-600 dark:text-slate-400 mb-6">
-              I'm always excited to take on new challenges and create amazing digital experiences. 
-              Let's discuss how I can help bring your project to life.
-            </p>
-            <button className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-indigo-600 to-cyan-600 text-white font-semibold rounded-lg hover:from-indigo-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105">
-              Start a Project
-            </button>
-          </div>
-        </div>
+       <div className="mt-16 text-center">
+  <div className="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-lg max-w-2xl mx-auto">
+    <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
+      Want to work together?
+    </h3>
+    <p className="text-slate-600 dark:text-slate-400 mb-6">
+      I'm always excited to take on new challenges and create amazing digital experiences. 
+      Let's discuss how I can help bring your project to life.
+    </p>
+
+    <button
+      onClick={() => window.open('https://www.linkedin.com/in/zahoor-ahmed-410944232/', '_blank')}
+      className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-indigo-600 to-cyan-600 text-white font-semibold rounded-lg hover:from-indigo-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
+    >
+      Start a Project
+    </button>
+  </div>
+</div>
+
       </div>
     </section>
   );

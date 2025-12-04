@@ -2,12 +2,12 @@ import React from 'react';
 import { Download, Mail, MapPin, GraduationCap, Award } from 'lucide-react';
 
 const About: React.FC = () => {
-  const scrollToContact = () => {
-    const element = document.querySelector('#contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  // const scrollToContact = () => {
+  //   const element = document.querySelector('#contact');
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
 
   return (
     <section id="about" className="py-20 bg-white dark:bg-slate-900">
@@ -59,7 +59,7 @@ const About: React.FC = () => {
             </p>
             
             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              Currently, I'm pursuing BE Software Engineering at MUET Jamshoro and leading as Director 
+               I'm graduated BE Software Engineering from MUET Jamshoro and leading as Director 
               of Graphic Design at the Software Engineering Society. I'm passionate about creating 
               digital experiences that are both beautiful and functional.
             </p>
@@ -81,7 +81,7 @@ const About: React.FC = () => {
                   <MapPin className="text-indigo-600 dark:text-indigo-400" size={24} />
                   <div>
                     <p className="font-semibold text-slate-900 dark:text-white">Location</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">Pakistan</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Karachi, Pakistan</p>
                   </div>
                 </div>
               </div>
